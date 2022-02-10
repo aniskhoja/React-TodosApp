@@ -21,7 +21,6 @@ function App() {
     localStorage.setItem('key', JSON.stringify(todos))
   }, [todos])
  
-
   const toggleTodo = (id) => {
     const newtodos = [...todos]
     const todo = newtodos.find(todo => todo.id === id)
